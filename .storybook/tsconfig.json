@@ -1,0 +1,31 @@
+{
+  "version": "2.9.1",
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "strict": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noLib": false,
+    "jsx": "react",
+    "allowJs": false,
+    "baseUrl": "",
+    "paths": {
+      "*": [
+        "./src/types/*"
+      ]
+    },
+    "typeRoots": [
+      "./types"
+    ]
+  }
+}

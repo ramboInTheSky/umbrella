@@ -1,0 +1,23 @@
+{
+  "name": "@daltanius/babel-preset",
+  "version": "0.1.0-beta.3",
+  "description": "A babel preset for transforming your JavaScript for daltanius",
+  "main": "./lib/index.js",
+  "author": "Alessio Fimognari <alefimo@gmail.com>",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "@daltanius/browserslist-config": "^0.1.0-beta.3",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.47",
+    "@babel/preset-env": "7.0.0-beta.47",
+    "babel-plugin-emotion": "9.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.47"
+  }
+}

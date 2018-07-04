@@ -1,0 +1,10 @@
+{
+  "lerna": "3.0.0-beta.21",
+  "packages": [
+    "components/*",
+    "configs/*",
+    "storybooks/*",
+    "styles/*"
+  ],
+  "version": "0.1.0-beta.3"
+}

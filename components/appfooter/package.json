@@ -1,0 +1,36 @@
+{
+  "name": "@daltanius/appfooter-component",
+  "version": "0.1.0-beta.3",
+  "description": "a reusable composable appfooter component for daltanius",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "Alessio Fimognari <alefimo@gmail.com>",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "rm -rf ./lib/ && rm -f package-lock.json",
+    "lint": "gulp lint"
+  },
+  "babel": {
+    "presets": [
+      "module:@daltanius/babel-preset"
+    ]
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@daltanius/styled": "^0.1.0-beta.3",
+    "luxon": "1.3.0",
+    "react": "16.3.2"
+  },
+  "devDependencies": {
+    "@daltanius/babel-preset": "^0.1.0-beta.3",
+    "@daltanius/icons-component": "^0.1.0-beta.3",
+    "@daltanius/tslint-config": "^0.1.0-beta.3",
+    "@babel/cli": "7.0.0-beta.47",
+    "@babel/core": "7.0.0-beta.47",
+    "@types/luxon": "1.2.0"
+  }
+}

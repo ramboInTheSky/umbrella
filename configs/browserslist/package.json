@@ -1,0 +1,13 @@
+{
+  "name": "@daltanius/browserslist-config",
+  "version": "0.1.0-beta.3",
+  "description": "A browserslist config for the officially supported browsers at daltanius",
+  "main": "./lib/index.js",
+  "author": "Alessio Fimognari <alefimo@gmail.com>",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  }
+}

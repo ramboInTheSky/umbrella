@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "@daltanius/storybook-addon-themes",
+  "version": "0.1.0-beta.3",
+  "description": "A storybook addon for themes at daltanius",
+  "main": "./dist/index.js",
+  "author": "Alessio Fimognari <alefimo@gmail.com>",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "rm -rf ./dist/"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/preset-env": "7.0.0-beta.47",
+    "@storybook/addons": "3.4.5",
+    "@storybook/core-events": "4.0.0-alpha.4",
+    "react": "16.3.2"
+  }
+}
