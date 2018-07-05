@@ -1,77 +1,75 @@
 import React from 'react';
 
-import { library, IconProp } from '@fortawesome/fontawesome';
+import { library, IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, Props } from '@fortawesome/react-fontawesome';
 
 // actual icons
-import barsLight from '@fortawesome/free-solid-svg-icons/faBars';
-import barsRegular from '@fortawesome/free-solid-svg-icons/faBars';
-import barsSolid from '@fortawesome/free-solid-svg-icons/faBars';
+import { faBars as barsLight } from '@fortawesome/free-solid-svg-icons';
+import { faBars as barsRegular } from '@fortawesome/free-solid-svg-icons';
+import { faBars as barsSolid } from '@fortawesome/free-solid-svg-icons';
 
-import balanceScaleLight from '@fortawesome/free-solid-svg-icons/faBalanceScale';
-import balanceScaleRegular from '@fortawesome/free-solid-svg-icons/faBalanceScale';
-import balanceScaleSolid from '@fortawesome/free-solid-svg-icons/faBalanceScale';
+import { faBalanceScale as balanceScaleLight } from '@fortawesome/free-solid-svg-icons';
+import { faBalanceScale as balanceScaleRegular } from '@fortawesome/free-solid-svg-icons';
+import { faBalanceScale as balanceScaleSolid } from '@fortawesome/free-solid-svg-icons';
 
-import chartLineLight from '@fortawesome/free-solid-svg-icons/faChartLine';
-import chartLineRegular from '@fortawesome/free-solid-svg-icons/faChartLine';
-import chartLineSolid from '@fortawesome/free-solid-svg-icons/faChartLine';
+import { faChartLine as chartLineLight } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine as chartLineRegular } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine as chartLineSolid } from '@fortawesome/free-solid-svg-icons';
 
-import circleLight from '@fortawesome/free-solid-svg-icons/faCircle';
-import circleRegular from '@fortawesome/free-solid-svg-icons/faCircle';
-import circleSolid from '@fortawesome/free-solid-svg-icons/faCircle';
+import { faCircle as circleLight } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as circleRegular } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as circleSolid } from '@fortawesome/free-solid-svg-icons';
 
-import cogLight from '@fortawesome/free-solid-svg-icons/faCog';
-import cogRegular from '@fortawesome/free-solid-svg-icons/faCog';
-import cogSolid from '@fortawesome/free-solid-svg-icons/faCog';
+import { faCog as cogLight } from '@fortawesome/free-solid-svg-icons/';
+import { faCog as cogRegular } from '@fortawesome/free-solid-svg-icons/';
+import { faCog as cogSolid } from '@fortawesome/free-solid-svg-icons/';
 
-import cogsLight from '@fortawesome/free-solid-svg-icons/faCogs';
-import cogsRegular from '@fortawesome/free-solid-svg-icons/faCogs';
-import cogsSolid from '@fortawesome/free-solid-svg-icons/faCogs';
+import { faCogs as cogsLight } from '@fortawesome/free-solid-svg-icons';
+import { faCogs as cogsRegular } from '@fortawesome/free-solid-svg-icons';
+import { faCogs as cogsSolid } from '@fortawesome/free-solid-svg-icons';
 
-import envelopeLight from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import envelopeRegular from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import envelopeSolid from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import { faEnvelope as envelopeLight } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope as envelopeRegular } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope as envelopeSolid } from '@fortawesome/free-solid-svg-icons';
 
-import plusSquareLight from '@fortawesome/free-solid-svg-icons/faPlusSquare';
-import plusSquareRegular from '@fortawesome/free-solid-svg-icons/faPlusSquare';
-import plusSquareSolid from '@fortawesome/free-solid-svg-icons/faPlusSquare';
+import { faPlusSquare as plusSquareLight } from '@fortawesome/free-solid-svg-icons';
+import { faPlusSquare as plusSquareRegular } from '@fortawesome/free-solid-svg-icons';
+import { faPlusSquare as plusSquareSolid } from '@fortawesome/free-solid-svg-icons';
 
-import searchLight from '@fortawesome/free-solid-svg-icons/faSearch';
-import searchRegular from '@fortawesome/free-solid-svg-icons/faSearch';
-import searchSolid from '@fortawesome/free-solid-svg-icons/faSearch';
+import { faSearch as searchLight } from '@fortawesome/free-solid-svg-icons';
+import { faSearch as searchRegular } from '@fortawesome/free-solid-svg-icons';
+import { faSearch as searchSolid } from '@fortawesome/free-solid-svg-icons';
 
-import timesLight from '@fortawesome/free-solid-svg-icons/faTimes';
-import timesRegular from '@fortawesome/free-solid-svg-icons/faTimes';
-import timesSolid from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faTimes as timesLight } from '@fortawesome/free-solid-svg-icons';
+import { faTimes as timesRegular } from '@fortawesome/free-solid-svg-icons';
+import { faTimes as timesSolid } from '@fortawesome/free-solid-svg-icons';
 
-import universityLight from '@fortawesome/free-solid-svg-icons/faUniversity';
-import universityRegular from '@fortawesome/free-solid-svg-icons/faUniversity';
-import universitySolid from '@fortawesome/free-solid-svg-icons/faUniversity';
+import { faUniversity as universityLight } from '@fortawesome/free-solid-svg-icons';
+import { faUniversity as universityRegular } from '@fortawesome/free-solid-svg-icons';
+import { faUniversity as universitySolid } from '@fortawesome/free-solid-svg-icons';
 
-import userCircleLight from '@fortawesome/free-solid-svg-icons/faUserCircle';
-import userCircleRegular from '@fortawesome/free-solid-svg-icons/faUserCircle';
-import userCircleSolid from '@fortawesome/free-solid-svg-icons/faUserCircle';
+import { faCircle as userCircleLight } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as userCircleRegular } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as userCircleSolid } from '@fortawesome/free-solid-svg-icons';
 
-import wifiLight from '@fortawesome/free-solid-svg-icons/faWifi';
-import wifiRegular from '@fortawesome/free-solid-svg-icons/faWifi';
-import wifiSolid from '@fortawesome/free-solid-svg-icons/faWifi';
-
-import { } from '@fortawesome/fontawesome-free-brands';
+import { faWifi as wifiLight } from '@fortawesome/free-solid-svg-icons';
+import { faWifi as wifiRegular } from '@fortawesome/free-solid-svg-icons';
+import { faWifi as wifiSolid } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
-  barsLight as any, barsRegular as any, barsSolid as any,
-  balanceScaleLight as any, balanceScaleRegular as any, balanceScaleSolid as any,
-  chartLineLight as any, chartLineRegular as any, chartLineSolid as any,
-  circleLight as any, circleRegular as any, circleSolid as any,
-  cogLight as any, cogRegular as any, cogSolid as any,
-  cogsLight as any, cogsRegular as any, cogsSolid as any,
-  envelopeLight as any, envelopeRegular as any, envelopeSolid as any,
-  plusSquareLight as any, plusSquareRegular as any, plusSquareSolid as any,
-  searchLight as any, searchRegular as any, searchSolid as any,
-  timesLight as any, timesRegular as any, timesSolid as any,
-  universityLight as any, universityRegular as any, universitySolid as any,
-  userCircleLight as any, userCircleRegular as any, userCircleSolid as any,
-  wifiLight as any, wifiRegular as any, wifiSolid as any,
+  barsLight, barsRegular, barsSolid,
+  balanceScaleLight, balanceScaleRegular, balanceScaleSolid,
+  chartLineLight, chartLineRegular, chartLineSolid,
+  circleLight, circleRegular, circleSolid,
+  cogLight, cogRegular, cogSolid,
+  cogsLight, cogsRegular, cogsSolid,
+  envelopeLight, envelopeRegular, envelopeSolid,
+  plusSquareLight, plusSquareRegular, plusSquareSolid,
+  searchLight, searchRegular, searchSolid,
+  timesLight, timesRegular, timesSolid,
+  universityLight, universityRegular, universitySolid,
+  userCircleLight, userCircleRegular, userCircleSolid,
+  wifiLight, wifiRegular, wifiSolid,
 );
 
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;

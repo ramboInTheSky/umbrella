@@ -49,13 +49,13 @@ storiesOf('AppHeader', module)
         <SearchWrapper />
       </HeaderElementWrapper>
       <HeaderElementWrapper onClick={action('PlusSquare')}>
-        <Icons.PlusSquare.Light />
+        <Icons.PlusSquare.Solid />
       </HeaderElementWrapper>
       <HeaderElementWrapper onClick={action('Exchange')} >
-        <Icons.Exchange.Light/>
+        <Icons.ChartLine.Solid/>
       </HeaderElementWrapper>
       <HeaderElementWrapper onClick={action('UserCircle')} >
-        <Icons.UserCircle.Light/>
+        <Icons.UserCircle.Solid/>
       </HeaderElementWrapper>
     </AppHeader>
   ));

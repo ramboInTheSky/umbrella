@@ -4,7 +4,7 @@ import styled, { Theme, StyledComponent } from '@daltanius/styled';
 import { Icons, IconProps } from '@daltanius/icons-component';
 
 
-export const SearchIcon = styled(Icons.Search.Light)`
+export const SearchIcon = styled(Icons.Search.Solid)`
   color: ${ props => props.theme.primary.on };
   flex: none;
   font-size: 1.5rem;
